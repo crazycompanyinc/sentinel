@@ -1,44 +1,45 @@
-# Sentinel
+# 🛡️ Sentinel — Multi-Agent SOC
 
-Sentinel is a multi-agent security operations center for AI agent infrastructure. It monitors agent actions, detects threats, investigates suspicious behavior, executes response playbooks, preserves forensic evidence, and exposes both a CLI and FastAPI service.
+> Autonomous Security Operations Center for AI agent infrastructure. Real-time threat detection & response.
 
-## Capabilities
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-- Threat detection for unauthorized access, exfiltration, privilege escalation, denial of service, supply-chain risk, insider misuse, behavioral anomalies, and network anomalies.
-- Automated investigation with evidence collection and timeline reconstruction.
-- Automated response playbooks for unauthorized access, data exfiltration, compromise, and related incidents.
-- Threat intelligence ingestion and IOC scoring.
-- Agent communication analysis, vulnerability scanning, compliance checks, forensic reporting, and WebSocket alert broadcasting.
+## What is Sentinel?
 
-## Quick Start
+Sentinel is a multi-agent Security Operations Center (SOC) designed specifically for AI agent infrastructure. It monitors, detects, and responds to security threats across your entire agent ecosystem in real-time.
+
+## ✨ Features
+
+- 🔍 **Real-Time Monitoring** — continuous surveillance of all agent activities
+- 🚨 **Anomaly Detection** — ML-powered detection of unusual behavior patterns
+- 🛡️ **Incident Response** — automated containment and remediation
+- 📊 **Security Dashboard** — unified view of security posture
+- 🔐 **Access Control** — role-based permissions for agents
+- 📋 **Audit Logs** — complete activity trail for compliance
+- 🤖 **Agent Isolation** — automatic quarantine of compromised agents
+
+## 🚀 Quick Start
 
 ```bash
-python -m venv .venv
-. .venv/bin/activate
-pip install -e ".[dev]"
-sentinel init
-sentinel demo
-sentinel serve --port 8000
+git clone https://github.com/crazycompanyinc/sentinel
+cd sentinel
+pip install -r requirements.txt
+python sentinel.py
 ```
 
-## CLI
+## 🛠️ Tech Stack
 
-```bash
-sentinel init
-sentinel monitor
-sentinel events --severity critical
-sentinel investigate <event_id>
-sentinel incidents
-sentinel respond <incident_id>
-sentinel isolate <agent_id>
-sentinel forensic <incident_id>
-sentinel threats
-sentinel intel
-sentinel vulnerabilities
-sentinel compliance
-sentinel alert
-sentinel demo
-```
+- **Backend:** Python, FastAPI
+- **Frontend:** React, TypeScript
+- **ML:** scikit-learn, TensorFlow
+- **Monitoring:** Prometheus, Grafana
 
-By default Sentinel stores state in `sentinel.db` in the current directory. Override with `SENTINEL_DB=/path/to/sentinel.db`.
+## 📄 License
 
+MIT
+
+---
+
+Built with ❤️ by [ZOO Technologies](https://zootechnologies.com)
